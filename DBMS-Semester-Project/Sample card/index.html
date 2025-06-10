@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Card</title>
+
+    <!-- Google Fonts + Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            width: 320px;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 28px rgba(0, 0, 0, 0.15);
+        }
+
+        .add-card {
+            border-top: 5px solid #2ecc71;
+            background: linear-gradient(145deg, #fafffa, #ffffff);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 1rem;
+        }
+
+        .card-header .material-icons {
+            font-size: 32px;
+            color: #2ecc71;
+        }
+
+        .card h2 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #7f8c8d;
+            font-size: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card-action {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: #2ecc71;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .card-action:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card add-card" onclick="window.location.href='/go-to-doctors'">
+        <div class="card-header">
+            <span class="material-icons">local_hospital</span>
+            <h2>View Doctors</h2>
+        </div>
+        <p>Browse all available doctors and specialists at a glance.</p>
+        <button class="card-action">
+            <span class="material-icons">arrow_forward</span>
+        </button>
+    </div>
+
+</body>
+
+</html>

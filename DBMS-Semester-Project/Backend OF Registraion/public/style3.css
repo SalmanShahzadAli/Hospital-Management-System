@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 3px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(gikimc.jpg);
+}
+.cards {
+    width: 15%;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+    border: 5px solid white;
+    color: whitesmoke;
+}
+.image img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.title {
+    text-align: center;
+    padding: 5px; 
+}
+.description {
+    padding: 4px;
+    padding-top: 10px;
+}
+button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s; 
+}
+.title {
+    padding: 15px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-container {
+    background-color: #2b2929;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    color: white;
+    margin-top: 10px;
+}
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor List</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <a href="/landing" class = "logo-link"><h2 class="logo">Giki Medical Center</h2></a>
+        <h2 class="page-info">Admin View Doctors</h2>
+    </div>
+    <div class="table-container">
+        <h2>Doctors View Admin Panel</h2>
+        <table class="doctor-table">
+            <thead>
+                <tr>
+                    <th>Doctor ID</th>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Experience</th>
+                    <th>Mobile Number</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% doctor.forEach(doctor => { %>
+                <tr>
+                    <td><%=doctor.doctor_id %></td>
+                    <td><%=doctor.name %></td>
+                    <td><%= doctor.specialization %></td>
+                    <td><%= doctor.experience %></td>
+                    <td><%= doctor.mobile_number %></td>
+                    <td><%= doctor.email %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
