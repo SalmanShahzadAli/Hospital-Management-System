@@ -43,6 +43,13 @@ body::before {
     text-decoration: none;
     color: inherit;
 }
+.logo-img {
+    width: 40px;      /* Change this to your desired width */
+    height: 40px;     /* Change this to your desired height */
+    margin-right: 10px;
+    object-fit: contain; /* Keeps the aspect ratio clean */
+}
+
 .login-wrapper {
     width: 400px;
     padding: 30px;
